@@ -1,7 +1,7 @@
 Rapture Core staging tree 1.0.0
 ===============================
 
-`master:` [![Build Status](https://travis-ci.org/RaptureCore/RaptureCore.svg?branch=master)](https://travis-ci.org/RaptureCore/RaptureCore) `develop:` [![Build Status](https://travis-ci.org/RaptureCore/RaptureCore.svg?branch=develop)](https://travis-ci.org/RaptureCore/RaptureCore/branches)
+`master:` [![Build Status](https://travis-ci.org/RaptureCore/Rapture.svg?branch=master)](https://travis-ci.org/RaptureCore/Rapture) `develop:` [![Build Status](https://travis-ci.org/RaptureCore/Rapture.svg?branch=develop)](https://travis-ci.org/RaptureCore/Rapture/branches)
 
 https://www.rapture.org
 
@@ -29,7 +29,7 @@ Development Process
 -------------------
 
 The `master` branch is meant to be stable. Development is normally done in separate branches.
-[Tags](https://github.com/RaptureCore/RaptureCore/tags) are created to indicate new official,
+[Tags](https://github.com/RaptureCore/Rapture/tags) are created to indicate new official,
 stable release versions of Rapture Core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).

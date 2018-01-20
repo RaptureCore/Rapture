@@ -20,7 +20,7 @@ packages:
 - "python"
 reference_datetime: "2018-01-05 12:00:00"
 remotes:
-- "url": "https://github.com/RaptureCore/RaptureCore.git"
+- "url": "https://github.com/RaptureCore/Rapture.git"
   "dir": "rapture"
 files: []
 script: |

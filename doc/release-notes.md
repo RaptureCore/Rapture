@@ -10,7 +10,7 @@ improvements.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/RaptureCore/RaptureCore/issues>
+  <https://github.com/RaptureCore/Rapture/issues>
 
 
 Upgrading and downgrading

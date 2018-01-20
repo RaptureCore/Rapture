@@ -25,8 +25,8 @@ Build-Depends: debhelper,
  python
 Standards-Version: 3.9.2
 Homepage: https://www.rapture.org/
-Vcs-Git: git://github.com/RaptureCore/RaptureCore.git
-Vcs-Browser: https://github.com/RaptureCore/RaptureCore
+Vcs-Git: git://github.com/RaptureCore/Rapture.git
+Vcs-Browser: https://github.com/RaptureCore/Rapture
 
 Package: raptured
 Architecture: any

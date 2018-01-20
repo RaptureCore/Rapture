@@ -104,5 +104,5 @@ deploy:
   skip_cleanup: true
   local-dir: $OUTDIR
   on:
-    repo: RaptureCore/RaptureCore
+    repo: RaptureCore/Rapture
   

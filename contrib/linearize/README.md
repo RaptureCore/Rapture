@@ -3,7 +3,7 @@ Construct a linear, no-fork, best version of the blockchain.
 
 ## Step 0: Install rapture_hash
 
-https://github.com/RaptureCore/RaptureCore_hash
+https://github.com/RaptureCore/Rapture_hash
 
 ## Step 1: Download hash list
 
