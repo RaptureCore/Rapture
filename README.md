@@ -13,6 +13,26 @@ Rapture has three core goals:
 
 • To serve as a convenient method of payment among believers, which increases the community grant fund for outreach and missionary programs
 
+Current wallets
+---------------
+Linux -
+
+https://github.com/RaptureCore/Rapture/releases/download/v1.0.0/rapturecore-1.0.0-linux32.tar.gz
+
+https://github.com/RaptureCore/Rapture/releases/download/v1.0.0/rapturecore-1.0.0-linux64.tar.gz
+
+Windows -
+
+https://github.com/RaptureCore/Rapture/releases/download/v1.0.0/rapturecore-1.0.0-win32.zip
+
+https://github.com/RaptureCore/Rapture/releases/download/v1.0.0/rapturecore-1.0.0-win64.zip
+
+Mac -
+
+https://github.com/RaptureCore/Rapture/releases/download/v1.0.0/rapturecore-1.0.0-win32.zip
+
+https://github.com/RaptureCore/Rapture/releases/download/v1.0.0/rapturecore-1.0.0-win64.zip
+
 
 Fundamentals
 ------------
