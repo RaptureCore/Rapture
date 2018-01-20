@@ -1,0 +1,22 @@
+[Unit]
+Description=Rapture's distributed currency daemon
+After=network.target
+
+[Service]
+User=rapturecore
+Group=rapturecore
+
+Type=forking
+PIDFile=/var/lib/raptured/raptured.pid
+ExecStart=/usr/bin/raptured -daemon -pid=/var/lib/raptured/raptured.pid \
+-conf=/etc/rapturecore/rapture.conf -datadir=/var/lib/raptured -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

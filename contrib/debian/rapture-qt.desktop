@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Rapture
+Comment=Rapture P2P Cryptocurrency
+Comment[fr]=Rapture, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Rapture, eşten eşe kriptografik sanal para birimi
+Exec=rapture-qt %u
+Terminal=false
+Type=Application
+Icon=rapture128
+MimeType=x-scheme-handler/rapture;
+Categories=Office;Finance;

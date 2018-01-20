@@ -1,0 +1,6 @@
+usr/local/bin/rapture-qt usr/bin
+share/pixmaps/rapture32.xpm usr/share/pixmaps
+share/pixmaps/rapture16.xpm usr/share/pixmaps
+share/pixmaps/rapture128.png usr/share/pixmaps
+debian/rapture-qt.desktop usr/share/applications
+debian/rapture-qt.protocol usr/share/kde4/services/
