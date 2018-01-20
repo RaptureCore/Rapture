@@ -1,22 +1,55 @@
-Rapture Core staging tree 1.0.0
-===============================
+Rapture Core
+=============
 
-`master:` [![Build Status](https://travis-ci.org/RaptureCore/Rapture.svg?branch=master)](https://travis-ci.org/RaptureCore/Rapture) `develop:` [![Build Status](https://travis-ci.org/RaptureCore/Rapture.svg?branch=develop)](https://travis-ci.org/RaptureCore/Rapture/branches)
+https://our-rapture.com
 
-https://www.rapture.org
+Rapture digital currency is a highly secure and flexible method of payment that furthers the economic strength of the community itself. With no connection to the manipulation and corruption of the global banking and financial cartels, Rapture provides a way for believers to store value, exchange value, transact, and spread the word to the masses. 
+
+Rapture has three core goals:
+
+• To provide secure blockchain technology leveraged by believers
+
+• To create a built-in market for tract and gift sales, which gives believes a platform for spreading their message while increasing value to the currency
+
+• To serve as a convenient method of payment among believers, which increases the community grant fund for outreach and missionary programs
 
 
-What is Rapture?
-----------------
+Fundamentals
+------------
 
-Rapture is an experimental new digital currency that enables anonymous, instant
-payments to anyone, anywhere in the world. Rapture uses peer-to-peer technology
-to operate with no central authority: managing transactions and issuing money
-are carried out collectively by the network. Rapture Core is the name of the open
-source software which enables the use of this currency.
+Symbol: RAP
 
-For more information, as well as an immediately useable, binary version of
-the Rapture Core software, see https://www.our-rapture.com/#wallets.
+Type: PoW + Masternodes - Neoscrypt (ASIC Resistant, GPU friendly, DgW v3 retargeting)
+
+Features: Masternodes with high rewards, InstantSend, PrivateSend, Fast block times
+
+Coin supply: Approx 21 Million
+
+Premine: Approx 3%*
+
+Masternode Reward: 50% of block (+ Lucky PoW)
+
+Masternode Collateral: 1000 Rapture
+
+Block time average: 120 seconds
+
+PoW Reward: 14 Rapture (7 PoW + 7 MN), reducing by 7% annually
+
+Governance: Budgets and Superblocks initiating after approx 1 year (block 262,800)
+
+* Rapture premine to be used for Airdrops, Bounties, and development of Rapture Gift Cards system
+
+
+Links
+-------
+
+Discord - https://discord.gg/NMgQEn8
+Twitter - https://twitter.com/our_rapture
+Instagram - https://www.instagram.com/our_rapture/
+
+About - http://our-rapture.com/what-makes-us-different/
+FAQ - http://our-rapture.com/faq/
+Spread the word - http://our-rapture.com/spread-the-word/
 
 
 License
