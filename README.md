@@ -44,11 +44,15 @@ Links
 -------
 
 Discord - https://discord.gg/NMgQEn8
+
 Twitter - https://twitter.com/our_rapture
+
 Instagram - https://www.instagram.com/our_rapture/
 
 About - http://our-rapture.com/what-makes-us-different/
+
 FAQ - http://our-rapture.com/faq/
+
 Spread the word - http://our-rapture.com/spread-the-word/
 
 
