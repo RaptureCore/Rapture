@@ -13,6 +13,7 @@ Rapture has three core goals:
 
 • To serve as a convenient method of payment among believers, which increases the community grant fund for outreach and missionary programs
 
+
 Current wallets
 ---------------
 Linux -
@@ -32,6 +33,15 @@ Mac -
 https://github.com/RaptureCore/Rapture/releases/download/v1.0.0/rapturecore-1.0.0-win32.zip
 
 https://github.com/RaptureCore/Rapture/releases/download/v1.0.0/rapturecore-1.0.0-win64.zip
+
+
+Masternodes
+-----------
+Rapture implements masternodes that provide serveral important functions to the network. For the network services they provide, a random Masternode on the network is selected for each block and awarded 50% of the block subsidy.
+
+Masternodes MUST be run on a separate server with a hot/cold wallet setup. Most users will opt to use a VPS service with an Ubuntu 16.04 server such as Amazon EC2, Google Cloud Compute, or Vultr. Masternodes can not be operated from a local wallet as it is unsecure and a liability to have an unlocked and unecrypted local wallet...therfore, this functionality is blocked at a source code level.
+
+Masternodes also require sentinel ( https://github.com/RaptureCore/sentinel ) and the installation instructions found in that repository must be followed to host a properly functioning Masternode.
 
 
 Fundamentals
@@ -81,6 +91,7 @@ License
 
 Rapture Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
+
 
 Development Process
 -------------------
