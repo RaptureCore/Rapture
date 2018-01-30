@@ -20,7 +20,7 @@ env:
   - CCACHE_COMPRESS=1
   - BASE_OUTDIR=$TRAVIS_BUILD_DIR/$HOST/out
   - SDK_URL=https://bitcoincore.org/depends-sources/sdks
-  - PYTHON_DEBUG=1s
+  - PYTHON_DEBUG=1
   - WINEDEBUG=fixme-all
   matrix:
   - HOST=arm-linux-gnueabihf PPA="ppa:bitcoin/bitcoin" PACKAGES="g++-arm-linux-gnueabihf"
