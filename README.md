@@ -41,7 +41,17 @@ Rapture implements masternodes that provide serveral important functions to the 
 
 Masternodes MUST be run on a separate server with a hot/cold wallet setup. Most users will opt to use a VPS service with an Ubuntu 16.04 server such as Amazon EC2, Google Cloud Compute, or Vultr. Masternodes can not be operated from a local wallet as it is unsecure and a liability to have an unlocked and unecrypted local wallet...therfore, this functionality is blocked at a source code level.
 
-Masternodes also require sentinel ( https://github.com/RaptureCore/sentinel ) and the installation instructions found in that repository must be followed to host a properly functioning Masternode.
+Masternodes also require sentinel ( https://github.com/RaptureCore/sentinel ).
+
+We have two comprehensive masternode guides available now that can be used for the setup and configuration of Rapture masternodes using a Linux VPS to host the node (currently a requirement).
+
+The first guide goes through a hot/cold wallet setup using Vultr as a VPS service (they've been a decent choice with Linux VPS's available for $2.50/month). This guide also has a Troubleshooting section that is continually being added to:
+
+https://docs.google.com/document/d/1kz6OuR1ybR_ZpvKEvJQybUdn_jVZVfviks7h-77_1Gs/edit?usp=sharing
+
+The second guide is from Discord community member @birty#9460 (thanks birty!) and is focused on a setup with Time4VPS (another popular VPS option):
+
+https://docs.google.com/document/d/1CWUjlrmvpbceB7_Mu-mEhqg67nKYT7hvvF9gNTu4qMA/edit?usp=sharing
 
 
 Fundamentals
