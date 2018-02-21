@@ -1,4 +1,4 @@
-Rapture Core 1.0.0
+Rapture Core 1.1.0
 =====================
 
 This is the official reference wallet for Rapture digital currency and comprises the backbone of the Rapture peer-to-peer network. You can [download Rapture Core](https://www.rapture.org/#wallets) or [build it yourself](#building) using the guides below.

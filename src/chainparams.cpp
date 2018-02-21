@@ -78,11 +78,11 @@ public:
         consensus.nMasternodePaymentsIncreaseBlock = -1; //
         consensus.nMasternodePaymentsIncreasePeriod = -1; //
         consensus.nInstantSendKeepLock = 24;
-        consensus.nBudgetPaymentsStartBlock = 262800; // 1 year
+        consensus.nBudgetPaymentsStartBlock = 262800; // Approx 1 year
         consensus.nBudgetPaymentsCycleBlocks = 21900; // ~(60*24*30)/2
         consensus.nBudgetPaymentsWindowBlocks = 100;
         consensus.nBudgetProposalEstablishingTime = 60*60*24;
-        consensus.nSuperblockStartBlock = 270000; // 443 years
+        consensus.nSuperblockStartBlock = 270000; // Approx 1 year
         consensus.nSuperblockCycle = 21900; // ~(60*24*30)/2
         consensus.nGovernanceMinQuorum = 10;
         consensus.nGovernanceFilterElements = 20000;
@@ -134,9 +134,8 @@ public:
         pchMessageStart[3] = 0xa2;
         vAlertPubKey = ParseHex("0495ab78094514754fe24c81c5165b5e396ec6e40744d7926833a3007420fb0c4b5c7f7a8d036a9d11d8bf177ad73dae7610280fdfdff2fd1b037cb58694643e23");
         nDefaultPort = 14777;
-        nMaxTipAge = 60 * 168 * 10000; // ~144 blocks behind -> 2 x fork detection time
-        //nDelayGetHeadersTime = 24 * 60 * 60;
-        nDelayGetHeadersTime = 0;
+        nMaxTipAge = 6 * 60 * 60; // ~144 blocks behind -> 2 x fork detection time
+        nDelayGetHeadersTime = 24 * 60 * 60;
         nPruneAfterHeight = 10000;
 
         genesis = CreateGenesisBlock(1515264224, 143483, 0x1e0ffff0, 1, 50 * COIN);
@@ -149,10 +148,7 @@ public:
         //vFixedSeeds.clear();
         //vSeeds.clear();
         vSeeds.push_back(CDNSSeedData("our-rapture.com", "dnsseed.our-rapture.com"));
-        //vSeeds.push_back(CDNSSeedData("10.10.10.2", "10.10.10.2"));
-        //vSeeds.push_back(CDNSSeedData("rapturedot.io", "dnsseed.rapturedot.io"));
-        //vSeeds.push_back(CDNSSeedData("masternode.io", "dnsseed.masternode.io"));
-        //vSeeds.push_back(CDNSSeedData("rapturecore.io", "dnsseed.rapturecore.io"));
+       
 
         // Rapture addresses start with 'R'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,60);
