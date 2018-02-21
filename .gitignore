@@ -2,6 +2,7 @@
 *.sublime-workspace
 todo.txt
 reset-files.bash
+*.kate-swp
 
 *.tar.gz
 
