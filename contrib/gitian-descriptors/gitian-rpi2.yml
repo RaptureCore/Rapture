@@ -1,5 +1,5 @@
 ---
-name: "rapture-raspberry-1.0.0"
+name: "rapture-raspberry-1.1.0"
 enable_cache: true
 suites:
 - "precise"

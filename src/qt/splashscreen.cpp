@@ -35,17 +35,17 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle *networkStyle) 
 
     // set reference point, paddings
     int paddingLeft             = 14;
-    int paddingTop              = 470;
-    int titleVersionVSpace      = 17;
-    int titleCopyrightVSpace    = 32;
+    int paddingTop              = 452;
+    int titleVersionVSpace      = 25;
+    int titleCopyrightVSpace    = 42;
 
-    float fontFactor            = 1.0;
+    float fontFactor            = 0.8;
 
     // define text to place
     QString titleText       = tr("Rapture Core");
-    QString versionText     = QString(tr("Version %1")).arg(QString::fromStdString(FormatFullVersion()));
+    QString versionText     = QString(tr("Version 1.1.0"));
     QString copyrightTextBtc   = QChar(0xA9)+QString(" 2009-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Bitcoin Core developers"));
-    QString copyrightTextRapture   = QChar(0xA9)+QString(" 2014-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Rapture Core developers"));
+    QString copyrightTextRapture   = QChar(0xA9)+QString(" 2017-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Rapture Core developers"));
     QString titleAddText    = networkStyle->getTitleAddText();
     // networkstyle.cpp can't (yet) read themes, so we do it here to get the correct Splash-screen
     QString splashScreenPath = ":/images/" + GUIUtil::getThemeName() + "/splash";
@@ -60,7 +60,7 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle *networkStyle) 
     pixmap = QPixmap(splashScreenPath);
 
     QPainter pixPaint(&pixmap);
-    pixPaint.setPen(QColor(200,200,200));
+    pixPaint.setPen(QColor(110,110,110));
 
     // check font size and drawing with
     pixPaint.setFont(QFont(font, 18*fontFactor));
@@ -135,11 +135,12 @@ void SplashScreen::slotFinish(QWidget *mainWin)
 
 static void InitMessage(SplashScreen *splash, const std::string &message)
 {
-    QMetaObject::invokeMethod(splash, "showMessage",
+    
+QMetaObject::invokeMethod(splash, "showMessage",
         Qt::QueuedConnection,
         Q_ARG(QString, QString::fromStdString(message)),
         Q_ARG(int, Qt::AlignBottom|Qt::AlignHCenter),
-        Q_ARG(QColor, QColor(55,55,55)));
+        Q_ARG(QColor, QColor(90,90,90)));
 }
 
 static void ShowProgress(SplashScreen *splash, const std::string &title, int nProgress)

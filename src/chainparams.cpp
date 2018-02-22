@@ -78,11 +78,11 @@ public:
         consensus.nMasternodePaymentsIncreaseBlock = -1; //
         consensus.nMasternodePaymentsIncreasePeriod = -1; //
         consensus.nInstantSendKeepLock = 24;
-        consensus.nBudgetPaymentsStartBlock = 262800; // 1 year
+        consensus.nBudgetPaymentsStartBlock = 262800; // Approx 1 year
         consensus.nBudgetPaymentsCycleBlocks = 21900; // ~(60*24*30)/2
         consensus.nBudgetPaymentsWindowBlocks = 100;
         consensus.nBudgetProposalEstablishingTime = 60*60*24;
-        consensus.nSuperblockStartBlock = 270000; // 443 years
+        consensus.nSuperblockStartBlock = 270000; // Approx 1 year
         consensus.nSuperblockCycle = 21900; // ~(60*24*30)/2
         consensus.nGovernanceMinQuorum = 10;
         consensus.nGovernanceFilterElements = 20000;
@@ -118,10 +118,10 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nThreshold = 3226; // 80% of 4032
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000eda6ae98d"); // 0
+        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000005f2b9f6dc46727"); // 0
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x0000000e86517bb057d0e84de6712b098ab4a2a36b35bdd92117bb115411df65"); // 0
+        consensus.defaultAssumeValid = uint256S("0x00000000005bc39c38d96ae607faf5fc691832ac6b20c61c72e3ff4cddfafd6f"); // 0
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -134,9 +134,8 @@ public:
         pchMessageStart[3] = 0xa2;
         vAlertPubKey = ParseHex("0495ab78094514754fe24c81c5165b5e396ec6e40744d7926833a3007420fb0c4b5c7f7a8d036a9d11d8bf177ad73dae7610280fdfdff2fd1b037cb58694643e23");
         nDefaultPort = 14777;
-        nMaxTipAge = 60 * 168 * 10000; // ~144 blocks behind -> 2 x fork detection time
-        //nDelayGetHeadersTime = 24 * 60 * 60;
-        nDelayGetHeadersTime = 0;
+        nMaxTipAge = 6 * 60 * 60; // ~144 blocks behind -> 2 x fork detection time
+        nDelayGetHeadersTime = 24 * 60 * 60;
         nPruneAfterHeight = 10000;
 
         genesis = CreateGenesisBlock(1515264224, 143483, 0x1e0ffff0, 1, 50 * COIN);
@@ -149,10 +148,7 @@ public:
         //vFixedSeeds.clear();
         //vSeeds.clear();
         vSeeds.push_back(CDNSSeedData("our-rapture.com", "dnsseed.our-rapture.com"));
-        //vSeeds.push_back(CDNSSeedData("10.10.10.2", "10.10.10.2"));
-        //vSeeds.push_back(CDNSSeedData("rapturedot.io", "dnsseed.rapturedot.io"));
-        //vSeeds.push_back(CDNSSeedData("masternode.io", "dnsseed.masternode.io"));
-        //vSeeds.push_back(CDNSSeedData("rapturecore.io", "dnsseed.rapturecore.io"));
+       
 
         // Rapture addresses start with 'R'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,60);
@@ -187,9 +183,10 @@ public:
             (  40, uint256S("0x0000003be715fd8e23c60e278b2bb649cfa83b8310850dcd4f25a6bd971a8aff"))
             (  100, uint256S("0x0000000931d01ef39615031963ca51517b899fbe3727d47cedf25f46c35da9a2"))
             (  200, uint256S("0x0000001832620794f560fe171267d2f8f6a9be468be63ca959e3c9bb54245271"))
-            (  600, uint256S("0x00000008fa97d9135368f0cdd7cd319d75ebb154b6798a8e5b0473b1bb7cd10e")),
-            1516326882, // * UNIX timestamp of last checkpoint block
-            621,    // * total number of transactions between genesis and last checkpoint
+            (  600, uint256S("0x00000008fa97d9135368f0cdd7cd319d75ebb154b6798a8e5b0473b1bb7cd10e"))
+            (  23490, uint256S("0x00000000005bc39c38d96ae607faf5fc691832ac6b20c61c72e3ff4cddfafd6f")),
+            1519249337, // * UNIX timestamp of last checkpoint block
+            34551,    // * total number of transactions between genesis and last checkpoint
                         //   (the tx=... number in the SetBestChain debug.log lines)
             5000        // * estimated number of transactions pre day after checkpoint
         };

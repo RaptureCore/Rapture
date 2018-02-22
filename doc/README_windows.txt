@@ -1,4 +1,4 @@
-Rapture Core 0.12.1
+Rapture Core 1.1.0
 =====================
 
 Intro
