@@ -1,6 +1,14 @@
 Rapture Core
 =============
 
+Mandatory update v1.1.0 available
+
+PLEASE update prior to block 29,000. 
+
+Local wallets AND masternode vps's must be updated.
+
+The Rapture wallet has been updated to version 1.1.0 and includes a change to the proof-of-work/masternode ratio starting at block 29,000.
+
 https://our-rapture.com
 
 Rapture digital currency is a highly secure and flexible method of payment that furthers the economic strength of the community itself. With no connection to the manipulation and corruption of the global banking and financial cartels, Rapture provides a way for believers to store value, exchange value, transact, and spread the word to the masses. 
@@ -18,21 +26,21 @@ Current wallets
 ---------------
 Linux -
 
-https://github.com/RaptureCore/Rapture/releases/download/v1.0.0/rapturecore-1.0.0-linux32.tar.gz
+https://github.com/RaptureCore/Rapture/releases/download/v1.0.0/rapturecore-1.1.0-linux32.tar.gz
 
-https://github.com/RaptureCore/Rapture/releases/download/v1.0.0/rapturecore-1.0.0-linux64.tar.gz
+https://github.com/RaptureCore/Rapture/releases/download/v1.0.0/rapturecore-1.1.0-linux64.tar.gz
 
 Windows -
 
-https://github.com/RaptureCore/Rapture/releases/download/v1.0.0/rapturecore-1.0.0-win32.zip
+https://github.com/RaptureCore/Rapture/releases/download/v1.0.0/rapturecore-1.1.0-win32.zip
 
-https://github.com/RaptureCore/Rapture/releases/download/v1.0.0/rapturecore-1.0.0-win64.zip
+https://github.com/RaptureCore/Rapture/releases/download/v1.0.0/rapturecore-1.1.0-win64.zip
 
 Mac -
 
-https://github.com/RaptureCore/Rapture/releases/download/v1.0.0/rapturecore-1.0.0-win32.zip
+https://github.com/RaptureCore/Rapture/releases/download/v1.0.0/rapturecore-1.1.0-win32.zip
 
-https://github.com/RaptureCore/Rapture/releases/download/v1.0.0/rapturecore-1.0.0-win64.zip
+https://github.com/RaptureCore/Rapture/releases/download/v1.0.0/rapturecore-1.1.0-win64.zip
 
 
 Masternodes
