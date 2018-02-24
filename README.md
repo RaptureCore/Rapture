@@ -26,21 +26,21 @@ Current wallets
 ---------------
 Linux -
 
-https://github.com/RaptureCore/Rapture/releases/download/v1.0.0/rapturecore-1.1.0-linux32.tar.gz
+https://github.com/RaptureCore/Rapture/releases/download/v1.1.0/rapturecore-1.1.0-linux32.tar.gz
 
-https://github.com/RaptureCore/Rapture/releases/download/v1.0.0/rapturecore-1.1.0-linux64.tar.gz
+https://github.com/RaptureCore/Rapture/releases/download/v1.1.0/rapturecore-1.1.0-linux64.tar.gz
 
 Windows -
 
-https://github.com/RaptureCore/Rapture/releases/download/v1.0.0/rapturecore-1.1.0-win32.zip
+https://github.com/RaptureCore/Rapture/releases/download/v1.1.0/rapturecore-1.1.0-win32.zip
 
-https://github.com/RaptureCore/Rapture/releases/download/v1.0.0/rapturecore-1.1.0-win64.zip
+https://github.com/RaptureCore/Rapture/releases/download/v1.1.0/rapturecore-1.1.0-win64.zip
 
 Mac -
 
-https://github.com/RaptureCore/Rapture/releases/download/v1.0.0/rapturecore-1.1.0-win32.zip
+https://github.com/RaptureCore/Rapture/releases/download/v1.1.0/rapturecore-1.1.0-win32.zip
 
-https://github.com/RaptureCore/Rapture/releases/download/v1.0.0/rapturecore-1.1.0-win64.zip
+https://github.com/RaptureCore/Rapture/releases/download/v1.1.0/rapturecore-1.1.0-win64.zip
 
 
 Masternodes
