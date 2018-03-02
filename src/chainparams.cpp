@@ -208,12 +208,12 @@ public:
         consensus.nMasternodePaymentsIncreaseBlock = 4030;
         consensus.nMasternodePaymentsIncreasePeriod = 10;
         consensus.nInstantSendKeepLock = 6;
-        consensus.nBudgetPaymentsStartBlock = 4100;
+        consensus.nBudgetPaymentsStartBlock = 262800;
         consensus.nBudgetPaymentsCycleBlocks = 50;
         consensus.nBudgetPaymentsWindowBlocks = 10;
         consensus.nBudgetProposalEstablishingTime = 60*20;
-        consensus.nSuperblockStartBlock = 4200; // NOTE: Should satisfy nSuperblockStartBlock > nBudgetPeymentsStartBlock
-        consensus.nSuperblockCycle = 24; // Superblocks can be issued hourly on testnet
+        consensus.nSuperblockStartBlock = 270000; // NOTE: Should satisfy nSuperblockStartBlock > nBudgetPeymentsStartBlock
+        consensus.nSuperblockCycle = 21900; // Superblocks can be issued hourly on testnet
         consensus.nGovernanceMinQuorum = 1;
         consensus.nGovernanceFilterElements = 500;
         consensus.nMasternodeMinimumConfirmations = 1;
@@ -223,12 +223,12 @@ public:
         consensus.BIP34Height = 1;
         consensus.BIP34Hash = uint256S("0x000001cb2b304d388bef3689203cc311944632dff81e2f9f5b4abe855efc60e7");
         consensus.powLimit = uint256S("00000fffff000000000000000000000000000000000000000000000000000000");
-        consensus.nPowTargetTimespan = 24 * 60 * 60; // Rapture: 1 day
-        consensus.nPowTargetSpacing = 2.5 * 60; // Rapture: 2.5 minutes
+        consensus.nPowTargetTimespan = 10* 24 * 60 * 60; // Rapture: 10 days
+        consensus.nPowTargetSpacing = 2 * 60; // Rapture: 2 minutes
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = false;
-        consensus.nPowKGWHeight = 4001; // nPowKGWHeight >= nPowDGWHeight means "no KGW"
-        consensus.nPowDGWHeight = 4001;
+        consensus.nPowKGWHeight = 200; // nPowKGWHeight >= nPowDGWHeight means "no KGW"
+        consensus.nPowDGWHeight = 200;
         consensus.nRuleChangeActivationThreshold = 1512; // 75% for testchains
         consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
@@ -260,19 +260,18 @@ public:
         vAlertPubKey = ParseHex("04adcf8883632da1ca6b4a466e579dd86ad1125e8c1f68ca9a99ec4e27ea99987d056086b2fae41e78c6cfa314be15cb6667acc8f958b6c66708e9a1c5bb4e849a");
         nDefaultPort = 24777;
         nMaxTipAge = 0x7fffffff; // allow mining on top of old blocks for testnet
-        nDelayGetHeadersTime = 24 * 60 * 60;
+        nDelayGetHeadersTime = std::numeric_limits<int64_t>::max(); // never delay GETHEADERS in regtests;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1525252151, 305127, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1520011772, 2368382, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         
-           
-        assert(consensus.hashGenesisBlock == uint256S("0x000001cb2b304d388bef3689203cc311944632dff81e2f9f5b4abe855efc60e7"));
+        assert(consensus.hashGenesisBlock == uint256S("0x00000d504c2b5622c6c3a1c0c3321fe58b6c79a442f5e7143ee0c0e5903cda3f"));
         assert(genesis.hashMerkleRoot == uint256S("0x98ddace479db5bd06ea9aea6ed6d309d2081bd39c2260aa57692ca5553e08605"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
-       // vSeeds.push_back(CDNSSeedData("rapturedot.io",  "10.10.10.2"));
+        vSeeds.push_back(CDNSSeedData("our-rapture.com", "dnsseed.our-rapture.com"));
 
         // Testnet Rapture addresses start with 'y'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,140);
@@ -303,11 +302,12 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-            (    0, uint256S("0x000001cb2b304d388bef3689203cc311944632dff81e2f9f5b4abe855efc60e7")),
+            (    0, uint256S("0x00000d504c2b5622c6c3a1c0c3321fe58b6c79a442f5e7143ee0c0e5903cda3f")),
+            (    17, uint256S("0x00000432e12a1b3538605d461b92adcef2088b2d023b604347d3c767f1d69cd7")),
           
 
-            1525252151, // * UNIX timestamp of last checkpoint block
-            0,       // * total number of transactions between genesis and last checkpoint
+            1520019234, // * UNIX timestamp of last checkpoint block
+            18,       // * total number of transactions between genesis and last checkpoint
                         //   (the tx=... number in the SetBestChain debug.log lines)
             2000         // * estimated number of transactions per day after checkpoint
         };
@@ -329,7 +329,7 @@ public:
         consensus.nMasternodePaymentsIncreasePeriod = 10;
         consensus.nInstantSendKeepLock = 6;
         consensus.nBudgetPaymentsStartBlock = 1000;
-        consensus.nBudgetPaymentsCycleBlocks = 50;
+        consensus.nBudgetPaymentsCycleBlocks = 21900;
         consensus.nBudgetPaymentsWindowBlocks = 10;
         consensus.nBudgetProposalEstablishingTime = 60*20;
         consensus.nSuperblockStartBlock = 1500;

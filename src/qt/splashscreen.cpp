@@ -43,7 +43,7 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle *networkStyle) 
 
     // define text to place
     QString titleText       = tr("Rapture Core");
-    QString versionText     = QString(tr("Version 1.1.0"));
+    QString versionText     = QString(tr("Version 1.1.1"));
     QString copyrightTextBtc   = QChar(0xA9)+QString(" 2009-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Bitcoin Core developers"));
     QString copyrightTextRapture   = QChar(0xA9)+QString(" 2017-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Rapture Core developers"));
     QString titleAddText    = networkStyle->getTitleAddText();

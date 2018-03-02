@@ -1,5 +1,5 @@
 ---
-name: "rapture-win-1.1.0"
+name: "rapture-win-1.1.1"
 enable_cache: true
 suites:
 - "trusty"
