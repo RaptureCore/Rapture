@@ -37,7 +37,7 @@ private:
 
     static const int MNB_RECOVERY_QUORUM_TOTAL      = 10;
     static const int MNB_RECOVERY_QUORUM_REQUIRED   = 6;
-    static const int MNB_RECOVERY_MAX_ASK_ENTRIES   = 10;
+    static const int MNB_RECOVERY_MAX_ASK_ENTRIES   = 400;
     static const int MNB_RECOVERY_WAIT_SECONDS      = 60;
     static const int MNB_RECOVERY_RETRY_SECONDS     = 3 * 60 * 60;
 
