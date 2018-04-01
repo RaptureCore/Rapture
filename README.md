@@ -75,13 +75,15 @@ Coin supply: Approx 21 Million
 
 Premine: Approx 3%*
 
-Masternode Reward: 50% of block (+ Lucky PoW)
+Total Block Reward: 14 Rapture (11.023 MN + 2.977 PoW),  reducing by 7% annually
+
+Masternode Reward: ~80% of block (+ Lucky PoW) after block 29,000, 50% prior to block 29,000
+
+PoW Reward: ~20% of block (+ Lucky PoW) after block 29,000, 50% prior to block 29,000
+
+Block Time Average: 120 seconds
 
 Masternode Collateral: 1000 Rapture
-
-Block time average: 120 seconds
-
-PoW Reward: 14 Rapture (7 PoW + 7 MN), reducing by 7% annually
 
 Governance: Budgets and Superblocks initiating after approx 1 year (block 262,800)
 
