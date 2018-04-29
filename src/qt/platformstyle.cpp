@@ -78,8 +78,8 @@ PlatformStyle::PlatformStyle(const QString &name, bool imagesOnButtons, bool col
     imagesOnButtons(imagesOnButtons),
     colorizeIcons(colorizeIcons),
     useExtraSpacing(useExtraSpacing),
-    singleColor(0,0,0),
-    textColor(0,0,0)
+    singleColor(240,240,240),
+    textColor(240,240,240)
 {
     // Determine icon highlighting color
     if (colorizeIcons) {

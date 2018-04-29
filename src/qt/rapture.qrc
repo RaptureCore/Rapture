@@ -66,6 +66,16 @@
     <qresource prefix="/images/light">
         <file alias="about">res/images/light/about.png</file>
         <file alias="rapture_logo_horizontal">res/images/light/rapture_logo_horizontal.png</file>
+        <file alias="transaction_header">res/images/light/transaction_header.png</file>
+        <file alias="rapture_logo_header">res/images/light/rapture_logo_header.png</file>
+        <file alias="rapture_logo_header_b">res/images/light/rapture_logo_header_b.png</file>
+        <file alias="rapture_logo_header_c">res/images/light/rapture_logo_header_c.png</file>
+        <file alias="rapture_logo_header_d">res/images/light/rapture_logo_header_d.png</file>
+        <file alias="rapture_logo_header_e">res/images/light/rapture_logo_header_e.png</file>
+        <file alias="rapture_logo_header_f">res/images/light/rapture_logo_header_f.png</file>
+        <file alias="rapture_logo_header_g">res/images/light/rapture_logo_header_g.png</file>
+        <file alias="rapture_logo_header_h">res/images/light/rapture_logo_header_h.png</file>
+        <file alias="rapture_logo_header_i">res/images/light/rapture_logo_header_i.png</file>
         <file alias="unchecked">res/images/light/unchecked.png</file>
         <file alias="checked">res/images/light/checked.png</file>
         <file alias="drkblue_downArrow">res/images/light/drkblue_downArrow.png</file>
@@ -75,6 +85,7 @@
         <file alias="drkblue_rightArrow_small">res/images/light/drkblue_rightArrow_small.png</file>
         <file alias="drkblue_qtreeview_selected">res/images/light/drkblue_qtreeview_selected.png</file>
         <file alias="drkblue_walletFrame_bg">res/images/light/drkblue_walletFrame_bg.png</file>
+        <file alias="header">res/images/light/header.png</file>
         <file alias="splash">res/images/light/splash.png</file>
         <file alias="splash_testnet">res/images/light/splash_testnet.png</file>
     </qresource>

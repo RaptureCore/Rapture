@@ -198,11 +198,18 @@ BitcoinAmountField::BitcoinAmountField(QWidget *parent) :
     amount->setLocale(QLocale::c());
     amount->installEventFilter(this);
     amount->setMaximumWidth(170);
+    amount->setStyleSheet("background:transparent;");
 
     QHBoxLayout *layout = new QHBoxLayout(this);
     layout->addWidget(amount);
     unit = new QValueComboBox(this);
     unit->setModel(new BitcoinUnits(this));
+    amount->setStyleSheet("background:transparent");
+   // unit->setStyleSheet("background:transparent;border:0");
+    //unit->setStyleSheet("background:transparent; QComboBox QAbstractItemView{ background:red;border:1px solid #444;}");
+   // unit->setStyleSheet("QComboBox QAbstractItemView::item { min-height: 35px; min-width: 50px; }QListView::item:selected { color: black; background-color: lightgray}");
+   // unit->setStyleSheet(STYLE_VALID);
+
     layout->addWidget(unit);
     layout->addStretch(1);
     layout->setContentsMargins(0,0,0,0);
@@ -243,7 +250,8 @@ bool BitcoinAmountField::validate()
 void BitcoinAmountField::setValid(bool valid)
 {
     if (valid)
-        amount->setStyleSheet("");
+       // amount->setStyleSheet(STYLE_VALID);
+        ;
     else
         amount->setStyleSheet(STYLE_INVALID);
 }

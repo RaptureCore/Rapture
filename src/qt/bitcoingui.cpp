@@ -55,6 +55,8 @@
 #include <QTimer>
 #include <QToolBar>
 #include <QVBoxLayout>
+#include <QFontDatabase>
+
 
 #if QT_VERSION < 0x050000
 #include <QTextDocument>
@@ -122,6 +124,13 @@ BitcoinGUI::BitcoinGUI(const PlatformStyle *platformStyle, const NetworkStyle *n
     spinnerFrame(0),
     platformStyle(platformStyle)
 {
+    QFontDatabase::addApplicationFont(":/fonts/Europa-Light.ttf");
+    QFontDatabase::addApplicationFont(":/fonts/Europa-Regular.ttf");
+    QFontDatabase::addApplicationFont(":/fonts/Europa-Bold.otf");
+    QFontDatabase::addApplicationFont(":/fonts/overpass-mono-regular.ttf");
+
+
+
     /* Open CSS when configured */
     this->setStyleSheet(GUIUtil::loadStyleSheet());
 
@@ -286,6 +295,7 @@ void BitcoinGUI::createActions()
 
     QString theme = GUIUtil::getThemeName();
     overviewAction = new QAction(QIcon(":/icons/" + theme + "/overview"), tr("&Overview"), this);
+   // overviewAction = new QAction(QIcon(), tr("&Overview"), this);
     overviewAction->setStatusTip(tr("Show general overview of wallet"));
     overviewAction->setToolTip(overviewAction->statusTip());
     overviewAction->setCheckable(true);
@@ -297,6 +307,7 @@ void BitcoinGUI::createActions()
     tabGroup->addAction(overviewAction);
 
     sendCoinsAction = new QAction(QIcon(":/icons/" + theme + "/send"), tr("&Send"), this);
+
     sendCoinsAction->setStatusTip(tr("Send coins to a Rapture address"));
     sendCoinsAction->setToolTip(sendCoinsAction->statusTip());
     sendCoinsAction->setCheckable(true);
@@ -555,11 +566,47 @@ void BitcoinGUI::createToolBars()
     if(walletFrame)
     {
         QToolBar *toolbar = new QToolBar(tr("Tabs toolbar"));
-        toolbar->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
+        QLabel* raplogo = new QLabel();
+        QPixmap raplogopix (QString::fromUtf8(":/images/light/rapture_logo_header"));
+        srand(std::time(0));
+        int randart=(rand()%10)+1;
+
+        //printf ("Randart: %i \n", randart);
+        // Make it sparkle
+        if (randart == 1){
+             raplogopix=(QString::fromUtf8(":/images/light/rapture_logo_header_b"));
+        } else if (randart == 2){
+             raplogopix=(QString::fromUtf8(":/images/light/rapture_logo_header_c"));
+        } else if (randart == 3){
+             raplogopix=(QString::fromUtf8(":/images/light/rapture_logo_header_d"));
+        } else if (randart == 4){
+             raplogopix=(QString::fromUtf8(":/images/light/rapture_logo_header_e"));
+        } else if (randart == 5){
+             raplogopix=(QString::fromUtf8(":/images/light/rapture_logo_header_f"));
+        } else if (randart == 6){
+             raplogopix=(QString::fromUtf8(":/images/light/rapture_logo_header_g"));
+        } else if (randart == 7){
+             raplogopix=(QString::fromUtf8(":/images/light/rapture_logo_header_h"));
+        } else if (randart == 8){
+             raplogopix=(QString::fromUtf8(":/images/light/rapture_logo_header_i"));
+        } else if (randart == 9){
+             raplogopix=(QString::fromUtf8(":/images/light/rapture_logo_header"));
+        } else if (randart == 10){
+             raplogopix=(QString::fromUtf8(":/images/light/rapture_logo_header_g"));
+        }
+
+        raplogo->setPixmap(raplogopix.scaledToHeight(70));
+        raplogo->setContentsMargins(0, 0, 0, 0);
+        //raplogo->setGeometry(0, 0, 200, 100);
+        //raplogo->setMaximumHeight(20);
+        toolbar->addWidget(raplogo);
+        toolbar->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
         toolbar->addAction(overviewAction);
         toolbar->addAction(sendCoinsAction);
         toolbar->addAction(receiveCoinsAction);
         toolbar->addAction(historyAction);
+        toolbar->setIconSize(QSize(32, 32));
+
         QSettings settings;
         if (settings.value("fShowMasternodesTab").toBool())
         {
@@ -572,10 +619,11 @@ void BitcoinGUI::createToolBars()
             This is a workaround mostly for toolbar styling on Mac OS but should work fine for every other OSes too.
         */
         QVBoxLayout *layout = new QVBoxLayout;
+
         layout->addWidget(toolbar);
         layout->addWidget(walletFrame);
         layout->setSpacing(0);
-        layout->setContentsMargins(QMargins());
+        layout->setContentsMargins(QMargins(0,0,0,0));
         QWidget *containerWidget = new QWidget();
         containerWidget->setLayout(layout);
         setCentralWidget(containerWidget);

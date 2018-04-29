@@ -1,5 +1,5 @@
 ---
-name: "rapture-osx-1.1.1"
+name: "rapture-osx-1.1.2"
 enable_cache: true
 suites:
 - "trusty"
