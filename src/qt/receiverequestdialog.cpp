@@ -95,6 +95,8 @@ ReceiveRequestDialog::ReceiveRequestDialog(QWidget *parent) :
     model(0)
 {
     ui->setupUi(this);
+    this->setStyleSheet("background-color: #333;");
+
 
 #ifndef USE_QRCODE
     ui->btnSaveAs->setVisible(false);
@@ -137,11 +139,12 @@ void ReceiveRequestDialog::update()
 
     QString uri = GUIUtil::formatBitcoinURI(info);
     ui->btnSaveAs->setEnabled(false);
+
     QString html;
-    html += "<html><font face='verdana, arial, helvetica, sans-serif'>";
+    html += "<html> <body style='background-color:#333'> <font color='#fff' face='verdana, arial, helvetica, sans-serif'>";
     html += "<b>"+tr("Payment information")+"</b><br>";
     html += "<b>"+tr("URI")+"</b>: ";
-    html += "<a href=\""+uri+"\">" + GUIUtil::HtmlEscape(uri) + "</a><br>";
+    html += "<a style='color:#ed55ba' href=\""+uri+"\">" + GUIUtil::HtmlEscape(uri) + "</a><br>";
     html += "<b>"+tr("Address")+"</b>: " + GUIUtil::HtmlEscape(info.address) + "<br>";
     if(info.amount)
         html += "<b>"+tr("Amount")+"</b>: " + BitcoinUnits::formatHtmlWithUnit(model->getDisplayUnit(), info.amount) + "<br>";

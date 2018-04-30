@@ -35,7 +35,7 @@
 // correctly.  Workaround is to display a space in a small font.  If you
 // change this, please test that it doesn't cause the parent span to start
 // wrapping.
-#define HTML_HACK_SP "<span style='white-space: nowrap; font-size: 6pt'> </span>"
+#define HTML_HACK_SP "<span style='white-space: nowrap; background-color: transparent; font-size: 6pt'> </span>"
 
 // Define THIN_SP_* variables to be our preferred type of thin space
 #define THIN_SP_CP   REAL_THIN_SP_CP

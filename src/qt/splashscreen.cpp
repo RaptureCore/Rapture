@@ -43,7 +43,7 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle *networkStyle) 
 
     // define text to place
     QString titleText       = tr("Rapture Core");
-    QString versionText     = QString(tr("Version 1.1.1"));
+    QString versionText     = QString(tr("Version 1.1.2"));
     QString copyrightTextBtc   = QChar(0xA9)+QString(" 2009-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Bitcoin Core developers"));
     QString copyrightTextRapture   = QChar(0xA9)+QString(" 2017-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Rapture Core developers"));
     QString titleAddText    = networkStyle->getTitleAddText();
@@ -60,7 +60,7 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle *networkStyle) 
     pixmap = QPixmap(splashScreenPath);
 
     QPainter pixPaint(&pixmap);
-    pixPaint.setPen(QColor(110,110,110));
+    pixPaint.setPen(QColor(250,250,250));
 
     // check font size and drawing with
     pixPaint.setFont(QFont(font, 18*fontFactor));
@@ -140,7 +140,7 @@ QMetaObject::invokeMethod(splash, "showMessage",
         Qt::QueuedConnection,
         Q_ARG(QString, QString::fromStdString(message)),
         Q_ARG(int, Qt::AlignBottom|Qt::AlignHCenter),
-        Q_ARG(QColor, QColor(90,90,90)));
+        Q_ARG(QColor, QColor(220,220,220)));
 }
 
 static void ShowProgress(SplashScreen *splash, const std::string &title, int nProgress)
