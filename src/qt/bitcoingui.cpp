@@ -295,7 +295,6 @@ void BitcoinGUI::createActions()
 
     QString theme = GUIUtil::getThemeName();
     overviewAction = new QAction(QIcon(":/icons/" + theme + "/overview"), tr("&Overview"), this);
-   // overviewAction = new QAction(QIcon(), tr("&Overview"), this);
     overviewAction->setStatusTip(tr("Show general overview of wallet"));
     overviewAction->setToolTip(overviewAction->statusTip());
     overviewAction->setCheckable(true);
@@ -623,7 +622,7 @@ void BitcoinGUI::createToolBars()
         layout->addWidget(toolbar);
         layout->addWidget(walletFrame);
         layout->setSpacing(0);
-        layout->setContentsMargins(QMargins(0,0,0,0));
+        layout->setContentsMargins(QMargins());
         QWidget *containerWidget = new QWidget();
         containerWidget->setLayout(layout);
         setCentralWidget(containerWidget);

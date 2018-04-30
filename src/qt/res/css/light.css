@@ -1104,6 +1104,7 @@ margin-left:0px;
 QWidget .QFrame#framePrivateSend .QLabel#labelCompletitionText { /* PrivateSend Completion Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
+font-size:10px;
 margin-right:5px;
 padding-right:5px;
 
@@ -1116,7 +1117,7 @@ border: 1px solid #818181;
 background-color: transparent;
 border-radius: 1px;
 /*margin-right:28px;*/
-margin-left:20px;
+margin-left:28px;
 
 text-align: left;
 color:#818181;
@@ -1868,8 +1869,28 @@ color:#fff;
 
 }
 
+
+MasternodeList QWidget QTabWidget {
+color:#fff;
+background:#333;
+
+}
+
 QWidget#MasternodeList {
 color:#fff;
+background:#333;
+
+}
+
+QWidget#MasternodeList QTabWidget{
+color:#fff;
+background:#333;
+
+}
+
+QWidget#MasternodeList QWidget{
+color:#fff;
+background:#333;
 
 }
 

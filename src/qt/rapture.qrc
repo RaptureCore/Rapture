@@ -63,6 +63,12 @@
     <qresource prefix="/css">
         <file alias="light">res/css/light.css</file>
     </qresource>
+    <qresource prefix="/fonts">
+        <file alias="Europa-Bold">res/fonts/Europa-Bold.otf</file>
+        <file alias="Europa-Light">res/fonts/Europa-Light.ttf</file>
+        <file alias="Europa-Regular">res/fonts/Europa-Regular.ttf</file>
+        <file alias="Overpass Mono">res/fonts/overpass-mono-regular.ttf</file>
+    </qresource>
     <qresource prefix="/images/light">
         <file alias="about">res/images/light/about.png</file>
         <file alias="rapture_logo_horizontal">res/images/light/rapture_logo_horizontal.png</file>
