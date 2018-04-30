@@ -227,6 +227,12 @@ RES_ICONS = \
   qt/res/icons/light/transaction_abandoned.png \
   qt/res/icons/light/network_disabled.png 
 
+RES_FONTS = \
+  qt/res/fonts/Europa-Bold.otf \
+  qt/res/fonts/Europa-Light.ttf \
+  qt/res/fonts/Europa-Regular.ttf \
+  qt/res/fonts/overpass-mono-regular.ttf 
+
 BITCOIN_QT_CPP = \
   qt/bantablemodel.cpp \
   qt/bitcoinaddressvalidator.cpp \
