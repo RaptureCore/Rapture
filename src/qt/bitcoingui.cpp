@@ -128,7 +128,9 @@ BitcoinGUI::BitcoinGUI(const PlatformStyle *platformStyle, const NetworkStyle *n
     QFontDatabase::addApplicationFont(":/fonts/Europa-Regular.ttf");
     QFontDatabase::addApplicationFont(":/fonts/Europa-Bold.otf");
     QFontDatabase::addApplicationFont(":/fonts/overpass-mono-regular.ttf");
-
+    QFont f=QApplication::font();
+    f.setStyleStrategy(QFont::PreferAntialias);
+    QApplication::setFont(f);
 
 
     /* Open CSS when configured */
