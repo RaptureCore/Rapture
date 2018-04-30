@@ -1896,10 +1896,14 @@ color:#333333;
 
 /* TRANSACTION DETAIL DIALOG */
 
+
 QDialog#TransactionDescDialog {
-background-color:#333;
+background:rbga(40,40,40,255);
 color:#fff;
 }
+
+
+
 
 QDialog#TransactionDescDialog QTextEdit { /* Contents of Receive Coin Dialog */
 border:1px solid #d7d7d7;
