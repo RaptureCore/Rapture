@@ -1,6 +1,15 @@
 Rapture Core
 =============
 
+04/30/18
+
+v1.1.2 - UI Overhaul
+
+Significant UI updates across almost all aspects of the wallet.
+New logo and type integrated
+Artwork behind logo swaps to a random variation each time the wallet is launched
+
+
 Mandatory update v1.1.0 available
 
 PLEASE update prior to block 29,000. 
@@ -26,26 +35,26 @@ Current wallets
 ---------------
 Linux -
 
-https://github.com/RaptureCore/Rapture/releases/download/v1.1.0/rapturecore-1.1.0-linux32.tar.gz
+https://github.com/RaptureCore/Rapture/releases/download/v1.1.2.0/rapturecore-1.1.2-linux32.tar.gz
 
-https://github.com/RaptureCore/Rapture/releases/download/v1.1.0/rapturecore-1.1.0-linux64.tar.gz
+https://github.com/RaptureCore/Rapture/releases/download/v1.1.2.0/rapturecore-1.1.2-linux64.tar.gz
 
 Windows -
 
-https://github.com/RaptureCore/Rapture/releases/download/v1.1.0/rapturecore-1.1.0-win32.zip
+https://github.com/RaptureCore/Rapture/releases/download/v1.1.2.0/rapturecore-1.1.2-win32.zip
 
-https://github.com/RaptureCore/Rapture/releases/download/v1.1.0/rapturecore-1.1.0-win64.zip
+https://github.com/RaptureCore/Rapture/releases/download/v1.1.2.0/rapturecore-1.1.2-win64.zip
 
 Mac -
 
-https://github.com/RaptureCore/Rapture/releases/download/v1.1.0/rapturecore-1.1.0-win32.zip
+https://github.com/RaptureCore/Rapture/releases/download/v1.1.2.0/rapturecore-1.1.2-osx.dmg
 
-https://github.com/RaptureCore/Rapture/releases/download/v1.1.0/rapturecore-1.1.0-win64.zip
+https://github.com/RaptureCore/Rapture/releases/download/v1.1.2.0/rapturecore-1.1.2-osx64.tar.gz
 
 
 Masternodes
 -----------
-Rapture implements masternodes that provide serveral important functions to the network. For the network services they provide, a random Masternode on the network is selected for each block and awarded 50% of the block subsidy.
+Rapture implements masternodes that provide serveral important functions to the network. For the network services they provide, a random Masternode on the network is selected for each block and awarded ~80% of the block subsidy.
 
 Masternodes MUST be run on a separate server with a hot/cold wallet setup. Most users will opt to use a VPS service with an Ubuntu 16.04 server such as Amazon EC2, Google Cloud Compute, or Vultr. Masternodes can not be operated from a local wallet as it is unsecure and a liability to have an unlocked and unecrypted local wallet...therfore, this functionality is blocked at a source code level.
 
@@ -95,7 +104,7 @@ Links
 
 Discord - https://discord.gg/NMgQEn8
 
-Twitter - https://twitter.com/our_rapture
+Twitter - https://twitter.com/RAP_Project  https://twitter.com/our_rapture
 
 Instagram - https://www.instagram.com/our_rapture/
 
