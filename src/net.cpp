@@ -1621,7 +1621,7 @@ void CConnman::ThreadOpenConnections()
     // Connect to specific addresses
     if (mapArgs.count("-connect") && mapMultiArgs["-connect"].size() > 0)
     {
-        for (int64_t nLoop = 0;; nLoop++)
+        for (int64_t nLoop = 0; nLoop++)
         {
             ProcessOneShot();
             BOOST_FOREACH(const std::string& strAddr, mapMultiArgs["-connect"])
